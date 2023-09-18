@@ -1,0 +1,89 @@
+﻿
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Style for the success alert */
+.custom-alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+/* Style for the error alert */
+.custom-alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Style for the alert message */
+.custom-alert-message {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style for the confirmation popup */
+.custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+}
+
+/* Style for the confirmation popup buttons */
+.custom-popup-buttons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+    .custom-popup-buttons button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+
+.cancel-button {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+table th {
+    border-bottom: 1px solid #ccc;
+    color: white;
+    font-weight: bold;
+    background-color: red !important;
+}
+
+table td {
+    color: black;
+}
+
+table td {
+    border-bottom: 1px solid #ccc;
+}
+
+h2{
+    color:#001C44
+}

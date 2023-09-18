@@ -1,0 +1,49 @@
+﻿<link href="~/Areas/Admin/Content/css/SanPham/ArrayBookView.css" rel="stylesheet" />
+
+<div class="Content">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Hãy nhập tên sách bạn muốn tìm kiếm......">
+    </div>
+
+    <table>
+        <tr>
+            <th>Mã sách</th>
+            <th>Ảnh</th>
+            <th>Tên sách</th>
+            <th>Tác giả</th>
+            <th>Nhà Xuất Bản</th>
+            <th>Số lượng</th>
+            <th colspan="3">Chỉnh sửa</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img src="~/images/a-z.jpg"></td>
+            <td>Tên sách:Lập trình từ A - Z</td>
+            <td>John Doe</td>
+            <td>Tuổi trẻ</td>
+            <td>10</td>
+            <td><a href="@Url.Action("DetailBookView", "SanPham")">Chi tiết</a></td>
+            <td><a href="@Url.Action("EditBookView", "SanPham")">Sửa</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="~/images/LTC.jpg"></td>
+            <td>Cách hình thành kinh tế hành</td>
+            <td>Jane Doe</td>
+            <td>Tuổi trẻ</td>
+            <td>5</td>
+            <td><a href="#">Chi tiết</a></td>
+            <td><a href="#">Sửa</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="~/images/LTC.jpg"></td>
+            <td>Mỹ Mỹ Là Bộ Xưa</td>
+            <td>John Smith</td>
+            <td>Tuổi trẻ</td>
+            <td>3</td>
+            <td><a href="#">Chi tiết</a></td>
+            <td><a href="#">Sửa</a></td>
+        </tr>
+    </table>
+</div>

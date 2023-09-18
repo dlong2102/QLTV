@@ -1,0 +1,43 @@
+﻿container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+
+th {
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+img {
+    max-height: 200px;
+    max-width: 100px;
+}
+
+.selected {
+    margin: 10px 0 20px 0;
+    color: black;
+}
+
+label {
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+}
+
+h2, .h2 {
+    color: Black;
+    text-align:center;
+}

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "EditBookView";
+}
+
+<link href="~/Areas/Admin/Content/css/SanPham/Editbook.css" rel="stylesheet" />
+
+<div class="container ">
+    <h1>SỬA SÁCH</h1>
+    <form>
+        <label for="namebook">Tên sách:</label><br>
+        <input type="text" id="namebook" name="namebook"><br>
+        <label for="author">Tác giả:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <label for="publisher">Nhà xuất bản:</label><br>
+        <input type="text" id="publisher" name="publisher"><br>
+        <label for="year">Năm xuất bản:</label><br>
+        <input type="text" id="year" name="year"><br>
+        <label for="quantity">Số lượng:</label><br>
+        <input type="number" id="quantity" name="quantity" value="0" min="0"><br>
+        <label for="image">Hình ảnh:</label><br>
+        <input type="file" id="image" name="image">
+        <img id="previewImage" src="#" alt="Hình ảnh sẽ được hiển thị ở đây"><br><br>
+        <input type="submit" value="Lưu">
+    </form>
+    <script>
+        // Lắng nghe sự kiện khi người dùng chọn tệp hình ảnh
+        document.getElementById("image").addEventListener("change", function () {
+            var previewImage = document.getElementById("previewImage");
+            var fileInput = this;
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    // Hiển thị hình ảnh đã chọn
+                    previewImage.src = e.target.result;
+                    previewImage.style.display = "block"; // Hiển thị hình ảnh sau khi đã chọn tệp
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        });
+    </script>
+</div>
